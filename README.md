@@ -56,6 +56,107 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
+# RE-DREAM 🏠
+
+RE-DREAM is a Laravel-based Real Estate Management Application designed to handle property listings, CRUD operations, and data presentation for real estate platforms.
+
+## 🚀 Features
+
+- 🏢 CRUD for property listings
+- 🔐 Authentication (if implemented)
+- 🎨 Frontend with Bootstrap & Vite
+- 🔍 Property browsing and filtering
+- 🗂 Organized MVC structure
+- 🛠 Easy to extend with Laravel ecosystem
+
+## 🧰 Tech Stack
+
+- **Framework**: Laravel
+- **Frontend**: Bootstrap, Vite
+- **Database**: MySQL
+- **Package Manager**: Composer, NPM
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/KEI404-A/RE-DREAM.git
+cd RE-DREAM
+composer install
+npm install && npm run dev
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+
+
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+![Screenshot](https://via.placeholder.com/800x400?text=Screenshot+Placeholder)
+
+---
+
+## 🧰 Tech Stack
+
+| Layer      | Technology           |
+|------------|----------------------|
+| Backend    | Laravel 10.x         |
+| Frontend   | Blade, Bootstrap     |
+| Styling    | Bootstrap 5, CSS     |
+| Build Tool | Vite, Laravel Mix    |
+| Database   | MySQL / MariaDB      |
+| Tools      | Composer, NPM        |
+
+---
+
+## ⚙️ Installation
+
+```bash
+# Clone project
+git clone https://github.com/KEI404-A/RE-DREAM.git
+cd RE-DREAM
+
+# Install dependencies
+composer install
+npm install && npm run dev
+
+# Copy and configure environment
+cp .env.example .env
+php artisan key:generate
+
+# Setup database
+php artisan migrate
+php artisan serve
+
+⚠️ Jangan lupa isi file .env sesuai konfigurasi database lokalmu.
+
+📁 Directory Structure (Utama)
+arduino
+Copy code
+RE-DREAM/
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+│   └── images/
+├── resources/
+│   └── views/
+├── routes/
+│   └── web.php
+├── .env
+└── README.md
+
+🛡️ License
+This project is open-source under the MIT License.
+
+🙋‍♂️ Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+📬 Contact
+Developed by KEI404-A
+GitHub: @KEI404-A
+
+RE-DREAM – Build your next real estate platform the Laravel way!
