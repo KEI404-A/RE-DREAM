@@ -60,23 +60,41 @@ cp .env.example .env
 # 5. Generate application key
 php artisan key:generate
 
-# 6. Configure your database in .env file
-# DB_CONNECTION=mysql
-# DB_HOST=127.0.0.1
-# DB_PORT=3306
-# DB_DATABASE=redream
-# DB_USERNAME=your_username
-# DB_PASSWORD=your_password
-
-# 7. Run database migrations
-php artisan migrate
-
-# 8. Build frontend assets
+# 6. Build frontend assets
 npm run dev
+```
 
-# 9. Start the development server
+## 🛠️ Environment Setup
+
+### 1. Database Setup
+Create a MySQL database manually, for example `redream_db`.
+
+### 2. Configure Environment
+Copy the environment file:
+```bash
+cp .env.example .env
+```
+
+Edit the `.env` file with your database configuration:
+```env
+DB_DATABASE=redream_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 3. Run Migrations
+Execute the database migrations:
+```bash
+php artisan migrate
+```
+
+### 4. Start the Server
+Launch the development server:
+```bash
 php artisan serve
 ```
+
+🎉 **Sekarang aplikasi RE-DREAM siap digunakan!**
 
 ⚠️ **Important**: Make sure to configure your `.env` file with the correct database credentials before running migrations.
 
